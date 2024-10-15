@@ -13,10 +13,8 @@ const APIConfigs = {
     "x-api-key": "DEMO-API-KEY",
   },
   body: {
-    id: "9ccXTANkb",
-    url: "https://cdn2.thecatapi.com/images/9ccXTANkb.jpg",
-    pending: 0,
-    approved: 1,
+    pending: 1,
+    approved: 0,
   },
 };
 

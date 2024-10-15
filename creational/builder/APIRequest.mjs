@@ -1,7 +1,7 @@
-export default class APIRequest {
+export class APIRequest {
   constructor(url) {
     this.request = {
-      url: host + url,
+      url: url,
     };
   }
 
@@ -14,7 +14,7 @@ export default class APIRequest {
   }
 
   addBody(body) {
-    this.body = body;
+    this.request.body = body;
   }
 
   get() {
