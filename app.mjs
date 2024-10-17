@@ -1,9 +1,9 @@
-import { globalColorCatalogOperator } from "./creational/singleton/globalColorCatalogOperator.mjs";
+import { GlobalColorCatalogOperator } from "./creational/singleton/GlobalColorCatalogOperator.mjs";
 
-let v1 = new globalColorCatalogOperator();
+let v1 = new GlobalColorCatalogOperator();
+let v2 = new GlobalColorCatalogOperator();
 
-//let v2 = new globalColorCatalogOperator();
-// console.log("Are they identical? " + (v1 === v2));
+console.log("Are they identical? " + (v1 === v2));
 
 console.log(v1.getColorByName("blue"));
 

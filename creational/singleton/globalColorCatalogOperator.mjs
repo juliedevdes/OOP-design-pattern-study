@@ -1,26 +1,25 @@
-let globalColorCatalog = {
-  ligthBlue: 565,
-  blue: 65456,
-  red: 87,
-  burgundy: 654,
-};
-
-export class globalColorCatalogOperator {
+export class GlobalColorCatalogOperator {
   constructor() {
     const instance = this.constructor.instance;
 
     if (instance) {
-      throw new Error("New instance cannot be created!!"); // or return instance
+      return instance;
     }
 
     this.constructor.instance = this;
+    this.globalColorCatalog = {
+      ligthBlue: 565,
+      blue: 65456,
+      red: 87,
+      burgundy: 654,
+    };
   }
 
   getColorByName(colorName) {
-    return globalColorCatalog[colorName];
+    return this.globalColorCatalog[colorName];
   }
 
   setColorValue(colorName, colorValue) {
-    globalColorCatalog[colorName] = colorValue;
+    this.globalColorCatalog[colorName] = colorValue;
   }
 }
