@@ -4,9 +4,9 @@
 
 import {APIRequestDirector} from "./creational/builder/APIRequestDirector.mjs";
 
-const APIDirector = new APIRequestDirector();
-const APIRequest = APIDirector.createAddImageRequest();
+const apiDirector = new APIRequestDirector();
+const apiRequest = apiDirector.createAddImageRequest();
 
-console.log(APIRequest);
+console.log(apiRequest);
 
 /* ====== Singleton ======*/
