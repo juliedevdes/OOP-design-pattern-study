@@ -23,24 +23,24 @@
 
 /* ====== 📘 PROTOTYPE 📘 ======*/
 
-// import { TextDocument } from "./creational/prototype/TextDocument.mjs";
-// import { TableDocument } from "./creational/prototype/TableDocument.mjs";
+import { TextDocument } from "./creational/prototype/TextDocument.mjs";
+import { TableDocument } from "./creational/prototype/TableDocument.mjs";
 
-// const textDocPrototype = new TextDocument();
-// textDocPrototype.init("Text Document content.", "Yuliia");
-// console.log(
-//   textDocPrototype.getContent() + "by " + textDocPrototype.getAuthor()
-// ); // Output: Text Document content.by Yuliia
+const textDocPrototype = new TextDocument();
+textDocPrototype.init("Text Document content.", "Yuliia");
+console.log(
+  textDocPrototype.getContent() + "by " + textDocPrototype.getAuthor()
+); // Output: Text Document content.by Yuliia
 
-// const clonedTextDoc = textDocPrototype.clone();
-// clonedTextDoc.init("This is a cloned text document.", "Oleg");
+const clonedTextDoc = textDocPrototype.clone();
+clonedTextDoc.init("This is a cloned text document.", "Oleg");
 
-// console.log(clonedTextDoc.getContent() + "by " + clonedTextDoc.getAuthor()); // Output: This is a cloned text document.by Oleg
-// console.log(clonedTextDoc.type); // Output: text
+console.log(clonedTextDoc.getContent() + "by " + clonedTextDoc.getAuthor()); // Output: This is a cloned text document.by Oleg
+console.log(clonedTextDoc.type); // Output: text
 
-// const tableDocPrototype = new TableDocument();
-// tableDocPrototype.init("Table Document content.", "Yuliia");
-// console.log(tableDocPrototype); // Output: tables
+const tableDocPrototype = new TableDocument();
+tableDocPrototype.init("Table Document content.", "Yuliia");
+console.log(tableDocPrototype); // Output: tables
 
 /* ====== 🏭 FACTORY 🏭 ======*/
 
