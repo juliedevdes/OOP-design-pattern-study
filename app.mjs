@@ -44,15 +44,15 @@
 
 /* ====== 🏭 FACTORY 🏭 ======*/
 
-// import { ProductFactory } from "./creational/factory/ProductFactory.mjs";
+import { ProductFactory } from "./creational/factory/ProductFactory.mjs";
 
-// const productFactory = new ProductFactory();
+const productFactory = new ProductFactory();
 
-// const product1 = productFactory.createProduct("Clothes");
-// console.log(product1.getProduct());
+const product1 = productFactory.createProduct("Clothes");
+console.log(product1.getProduct());
 
-// const product2 = productFactory.createProduct("Earings");
-// console.log(product2.getProduct());
+const product2 = productFactory.createProduct("Earings");
+console.log(product2.getProduct());
 
 /* ====== 🏫 ABSTRACT FACTORY 🏫 ======*/
 
