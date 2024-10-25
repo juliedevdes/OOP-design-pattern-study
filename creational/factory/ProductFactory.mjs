@@ -1,19 +1,12 @@
-import { ProductEarings } from "./ProductEarings.mjs";
-import { ProductClothes } from "./ProductClothes.mjs";
+import { Earings } from "./Earings.mjs";
+import { Clothes } from "./Clothes.mjs";
 
 export class ProductFactory {
-  createProduct(type) {
-    let product;
-    switch (type) {
-      case "Clothes":
-        product = new ProductClothes();
-        break;
-      case "Earings":
-        product = new ProductEarings();
-        break;
-      default:
-        throw new Error("Unknown product type");
-    }
-    return product;
+  createClothesProduct() {
+    return new Clothes();
+  }
+
+  createEaringsProduct() {
+    return new Earings();
   }
 }

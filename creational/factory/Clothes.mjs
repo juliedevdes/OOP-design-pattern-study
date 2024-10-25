@@ -1,4 +1,4 @@
-export class ProductClothes {
+export class Clothes {
   constructor() {
     this.type = "Clothes";
     this.size = "XL";

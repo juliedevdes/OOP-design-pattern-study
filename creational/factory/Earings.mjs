@@ -1,4 +1,4 @@
-export class ProductEarings {
+export class Earings {
   constructor() {
     this.type = "Earings";
     this.material = "silver";
