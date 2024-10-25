@@ -23,24 +23,14 @@
 
 /* ====== 📘 PROTOTYPE 📘 ======*/
 
-// import { TextDocument } from "./creational/prototype/TextDocument.mjs";
-// import { TableDocument } from "./creational/prototype/TableDocument.mjs";
+import { Document } from "./creational/prototype/Document.mjs";
 
-// const textDocPrototype = new TextDocument();
-// textDocPrototype.init("Text Document content.", "Yuliia");
-// console.log(
-//   textDocPrototype.getContent() + "by " + textDocPrototype.getAuthor()
-// ); // Output: Text Document content.by Yuliia
+const document = new Document("Content for text document", 'Yuliius');
+console.log(document)
 
-// const clonedTextDoc = textDocPrototype.clone();
-// clonedTextDoc.init("This is a cloned text document.", "Oleg");
-
-// console.log(clonedTextDoc.getContent() + "by " + clonedTextDoc.getAuthor()); // Output: This is a cloned text document.by Oleg
-// console.log(clonedTextDoc.type); // Output: text
-
-// const tableDocPrototype = new TableDocument();
-// tableDocPrototype.init("Table Document content.", "Yuliia");
-// console.log(tableDocPrototype); // Output: tables
+const clonedDoc = document.clone();
+clonedDoc.setContent("Content for cloned text document");
+console.log(clonedDoc);
 
 /* ====== 🏭 FACTORY 🏭 ======*/
 
