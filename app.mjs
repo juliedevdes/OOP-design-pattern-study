@@ -55,21 +55,17 @@
 // console.log(product2.getProduct());
 
 /* ====== 🏫 ABSTRACT FACTORY 🏫 ======*/
+import { ProductFactory } from "./creational/abstractFactory/ProductFactory.mjs";
 
-// function createProduct(factory, name, price, extraParams = {}) {
-//   return factory.createProduct(name, price, extraParams);
-// }
+const factory = new ProductFactory();
 
-// import { ClothingFactory } from "./creational/abstractFactory/ClothingFactory.mjs";
-// import { EaringsFactory } from "./creational/abstractFactory/EaringsFactory.mjs";
+const clothingFactory = factory.getProductFactory("Clothes");
+const earingsFactory = factory.getProductFactory("Earings");
 
-// const clothingFactory = new ClothingFactory();
-// const earingsFactory = new EaringsFactory();
+const tshirt = clothingFactory.createProduct("T-Shirt", 20, { size: "XL" });
+const earings = earingsFactory.createProduct("Hoop Earings", 10, {
+  material: "silver",
+});
 
-// const tshirt = createProduct(clothingFactory, "T-Shirt", 20, { size: "XL" });
-// const earings = createProduct(earingsFactory, "Hoop Earings", 10, {
-//   material: "silver",
-// });
-
-// console.log(tshirt);
-// console.log(earings);
+console.log(tshirt);
+console.log(earings);
